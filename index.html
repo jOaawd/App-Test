@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Selector</title>
+    <title>App</title>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
         * {
@@ -93,22 +93,7 @@
                     appButton.innerHTML = `<img src="${app.icon}" alt="${app.name}"><span>${app.name}</span>`;
 
                     appButton.onclick = () => {
-                        const iframeWindow = window.open("about:blank", "_blank");
-                        iframeWindow.document.write(`
-                            <html>
-                                <head>
-                                    <title>${app.name}</title>
-                                    <style>
-                                        html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: black; }
-                                        iframe { width: 100%; height: 100%; border: none; }
-                                    </style>
-                                </head>
-                                <body>
-                                    <iframe src="${app.link}" allowfullscreen></iframe>
-                                </body>
-                            </html>
-                        `);
-                        iframeWindow.document.close();
+                        window.location.href = app.link;
                     };
 
                     appListDiv.appendChild(appButton);
