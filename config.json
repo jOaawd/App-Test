@@ -1,0 +1,12 @@
+[
+  {
+    "name": "test",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwS0wdMewYEnCNaaGK_A1Av-LRIsaSsPp3Q&s",
+    "link": "https://example.com"
+  },
+  {
+    "name": "Google",
+    "icon": "https://www.google.com/favicon.ico",
+    "link": "https://www.google.com"
+  }
+]
